@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "198726889153",
+    "project_id": "medix-cfe45",
+    "storage_bucket": "medix-cfe45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198726889153:android:fdcf9a46726002703aae40",
+        "android_client_info": {
+          "package_name": "com.example.medix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnh5nczbagMqkIr4xRlHRRNH1J2Ix9Zn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
