@@ -8,19 +8,32 @@ class AboutDiseaseScreen extends StatelessWidget {
     List diseases = [
       {
         "name": "Coronaviruses (COVID-19)",
-        "image": "https://www.nfid.org/wp-content/uploads/2023/03/Coronavirus.png",
-        "description": "Coronaviruses are a large family of respiratory viruses that includes COVID-19, Middle EastRespiratory Syndrome (MERS), and Severe Acute Respiratory Syndrome (SARS). Coronavirusescause diseases in animals and humans. They often circulate among camels, cats, and bats, andcan sometimes evolve and infect people.In humans, the viruses can cause mild respiratory infections, like the common cold,but can lead to serious illnesses, like pneumonia.",
+        "image":
+            "https://www.nfid.org/wp-content/uploads/2023/03/Coronavirus.png",
+        "description":
+            "Coronaviruses are a large family of respiratory viruses that includes COVID-19, Middle EastRespiratory Syndrome (MERS), and Severe Acute Respiratory Syndrome (SARS). Coronavirusescause diseases in animals and humans. They often circulate among camels, cats, and bats, andcan sometimes evolve and infect people.In humans, the viruses can cause mild respiratory infections, like the common cold,but can lead to serious illnesses, like pneumonia.",
       },
       {
         "name": "Ebola",
         "image": "https://www.nfid.org/wp-content/uploads/2023/03/Ebola.jpeg",
-        "description": "Ebola is a rare and deadly disease caused by infection with a virus of the family Filoviridae, genus Ebolavirus. Ebola can cause disease in humans and otherprimates (monkeys, gorillas, and chimpanzees).",
+        "description":
+            "Ebola is a rare and deadly disease caused by infection with a virus of the family Filoviridae, genus Ebolavirus. Ebola can cause disease in humans and otherprimates (monkeys, gorillas, and chimpanzees).",
+      },
+      {
+        "name": "HPV (Human Papillomavirus)",
+        "image": "https://www.nfid.org/wp-content/uploads/2023/03/HPV-v1.jpeg",
+        "description":
+            "Human papillomavirus (HPV) is a group of more than 100 viruses that are usually spread through sexual contact. HPV is very common and can infect skin, the genital tract, and throat, and can cause certain cancers and genital warts in both males and females. Most infections have no symptoms, so many people do not know they are infected. ",
+      },
+      {
+        "name": "Meningococcal Disease",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnVhHkWk4dT1fLKYd4Em2uDO-WVTOrMKW8w&s",
+        "description":
+            "Meningococcal (muh-nin-jo-cok-ul) disease is a serious bacterial illness that can lead to severe swelling of the tissues surrounding the brain and spinal cord (meningitis) or infection of the bloodstream (meningococcal septicemia or meningococcemia). ",
       },
     ];
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Diseases List"), 
-      ),
+      appBar: AppBar(title: const Text("Diseases List")),
       body: ListView.builder(
         itemCount: diseases.length,
         itemBuilder: (context, index) {

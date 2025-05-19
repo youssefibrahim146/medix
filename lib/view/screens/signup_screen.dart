@@ -29,55 +29,6 @@ class SignUpScreen extends GetWidget<SignUpController> {
                   20.gap,
                   Hero(tag: AppStrings.logoTag, child: Center(child: Image.asset("assets/home logo.png", height: 100, width: 300))),
                   30.gap,
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      GetBuilder<SignUpController>(
-                          builder: (context) {
-                            return InkWell(
-                              onTap: () {
-                                controller.toggleIsCitizen();
-                                controller.update();
-                              },
-                              child: Container(
-                                padding: 8.edgeInsetsAll,
-                                decoration: BoxDecoration(
-                                  borderRadius: 8.borderRadiusAll,
-                                  color: controller.isCitizen? AppColors.blue: AppColors.white,
-                                ),
-                                child:  Text(
-                                  "Citizen / Resident",
-                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: controller.isCitizen? AppColors.white:AppColors.black),
-                                ),
-                              ),
-                            );
-                          }
-                      ),
-                      GetBuilder<SignUpController>(
-                          builder: (context) {
-                            return InkWell(
-                              onTap: () {
-                                controller.toggleIsVisitor();
-                                controller.update();
-                              },
-                              child: Container(
-                                padding: 8.edgeInsetsAll,
-                                decoration: BoxDecoration(
-                                  borderRadius: 8.borderRadiusAll,
-                                  color: ! controller.isCitizen? AppColors.blue: AppColors.white,
-                                ),
-                                child:  Text(
-                                  "Visitor",
-                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: !controller.isCitizen? AppColors.white:AppColors.black),
-                                ),
-                              ),
-                            );
-                          }
-                      ),
-
-                    ],
-                  ),
-                  30.gap,
                   const HeroWidget(
                     tag: AppStrings.subTitleTag,
                     child: Text("Name", style: TextStyle(fontSize: 12, color: AppColors.black)),
